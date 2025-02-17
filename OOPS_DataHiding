@@ -1,0 +1,123 @@
+Data Hiding
+Abstraction
+Encapsulation
+Tightly Encapsulated class
+Is-A Relationship
+HAS-A Relationship
+Method Signature
+Method Overloading
+Method Overriding
+Static Control Flow 
+Instance Control Flow
+Constructors
+Coupling
+Cohesion
+Type-Casting
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Data Hiding
+The process of hiding the data by making all the data members private in a class, so that data can't be accessed directly from outside the class.
+private access modifier is used to implement data hiding
+
+class Account {
+
+private double accBalance=1000.00;
+
+}
+
+Advantage of Data Hiding:  is data security
+
+data hiding is a concept in object-oriented programming that has to do with restricting access to certain parts of an object.
+But how exactly does that work in Java?
+
+data hiding is about making variables private so they can't be accessed directly from outside the class.
+That way, you can control how the data is modified or accessed.
+
+Data Hiding in Java (Layman's Explanation):
+
+Imagine you have a safe at home where you keep your valuables. 
+You don’t let anyone open the safe directly.
+Instead, if someone needs to add or take something, they ask you, and you handle it carefully. 
+You check if their request makes sense (like not taking money that isn’t there) before opening the safe.
+
+In Java, data hiding works similarly:
+
+The "safe" is a class (like a blueprint for objects).
+The "valuables" inside are the data (variables) that the class holds.
+The "lock" on the safe is the private keyword in Java. It prevents outsiders from directly accessing or changing the data.
+
+The way you interact with the safe (asking to add/remove items) is done through public methods (like deposit() or withdraw()). 
+These methods safely control how the data is used or modified.
+
+Why is this useful?
+It keeps your data secure (no one can tamper with it directly).
+You can add rules (like “Don’t allow negative balances”) inside the methods.
+The class can hide complexity (you don’t need to know how the safe works internally, just how to use it).
+
+Example:
+Think of a BankAccount class. If the balance were public, anyone could set it to “-$1000”. But by hiding the balance (making it private) and using methods like deposit(amount) or withdraw(amount), the class ensures withdrawals can’t exceed the balance, keeping things logical and safe.
+
+In short:
+Data hiding is like giving controlled access to your class’s data, ensuring it’s used correctly and securely. You “hide” the data behind methods, just like you’d hide valuables in a locked safe. 🔒
+
+encapsulation. 
+Data hiding is part of encapsulation. 
+Encapsulation is bundling data and methods that operate on the data within one unit, like a class, and controlling access to the inner workings of that class. 
+So data hiding would be the mechanism to achieve encapsulation by making the data private and providing public methods to interact with that data.
+
+Let me think of an example. Suppose there's a class called BankAccount. 
+If the balance is a public variable, anyone could change it directly, which is bad because you can't control invalid values. 
+But if the balance is private, you can only modify it through methods like deposit() or withdraw(), which can include checks to ensure the balance doesn't go negative or something. 
+
+So in layman terms, data hiding is like having a protective barrier around your data. 
+You don't let outsiders touch the data directly. 
+Instead, you provide specific ways (methods) for them to interact with the data, which you can monitor and validate.
+This helps prevent errors and misuse because the class controls how its data is accessed or modified.
+
+
+Maybe use a real-world analogy. Like a vending machine. You don't get to directly access the internal mechanisms or the money inside. You interact through the buttons and coin slot. The machine has hidden parts (data) that you can't touch, but public interfaces (methods) to use it. That way, the machine ensures you can't break it by messing with the internals.
+
+So data hiding in Java is like those hidden parts of the vending machine. The variables (data) are kept private, and methods (like buttons) are public. You use the methods to interact with the data, which keeps everything safe and working as intended.
+
+Another example: a person's age. If you store age as a public variable, someone could set it to a negative number. But if it's private, you can have a setAge() method that checks if the value is positive before setting it. That way, invalid ages are rejected.
+
+Wait, but in Java, how exactly do you hide data? By using the 'private' keyword. So when you declare a variable as private, it can only be accessed within the same class. To allow access, you provide public getter and setter methods. That's the standard practice.
+
+So putting it all together, data hiding in Java is about protecting the data inside a class by making it inaccessible from outside, except through controlled methods. This helps maintain the integrity of the data and prevents unintended interference.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
