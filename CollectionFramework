@@ -1,0 +1,4 @@
+An Array is an indexed collection of fixed no of homogeneous data elements.
+
+Limitations of object Arrays:-
+1. Arrays are fixed in size that means once an array is created 
