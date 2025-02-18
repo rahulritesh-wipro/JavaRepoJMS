@@ -1,1 +1,14 @@
+Abstraction
 
+Hiding internal implementation details and just highlight the set of services what we are offering is called Abstraction.
+
+ex- Bank ATM machine, bank will highlight the set of services what they offering without highlighting the internal 
+implementation is Abstraction.
+
+Two ways to achieve Abstraction
+> interface
+> abstract class
+
+Advantages of abstraction are-
+1. As the internal implementation is hidden from the outside world hence security can be achieved.
+2. Also internal implementation can be enhanced easily without affecting outside world.
